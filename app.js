@@ -15,11 +15,11 @@ function agregarAmigo() {
         return;
     }
 
-// Validación para que solo se acepten strings (letras y espacios)
-    if (!/^[a-zA-Z\s]+$/.test(nombreDeAmigo)) {
-        alert('Por favor, ingresa solo letras y espacios.');
-        return;
-    }
+// Validación para que solo se acepten strings con letras, espacios y acentos
+if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombreDeAmigo)) {
+    alert('Por favor, ingresa solo letras, espacios y acentos.');
+    return;
+}
 
 if (amigos.includes(nombreDeAmigo)) {
       alert('Este nombre ya ha sido ingresado.');
