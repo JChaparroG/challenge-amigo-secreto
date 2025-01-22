@@ -55,7 +55,7 @@ function sortearAmigo() {
     }
 
 // Validamos si hay menos de dos amigos en la lista
-if (amigos === 1) {
+if (amigos.length === 1) {
     alert("Debe haber al menos dos amigos para realizar el sorteo");
          return;
 }
