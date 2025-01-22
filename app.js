@@ -15,9 +15,9 @@ function agregarAmigo() {
         return;
     }
 
-// Validación para que solo se acepten strings con letras, espacios y acentos
-if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombreDeAmigo)) {
-    alert('Por favor, ingresa solo letras, espacios y acentos.');
+// Validación para que solo se acepten nombres válidos (mínimo dos letras por palabra, permiten espacios y acentos)
+if (!/^(?:[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,})(?:\s[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,})*$/.test(nombreDeAmigo)) {
+    alert('Por favor, ingresa un nombre válido (cada palabra debe tener al menos dos letras).');
     return;
 }
 
