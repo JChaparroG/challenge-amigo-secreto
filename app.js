@@ -14,6 +14,13 @@ function agregarAmigo() {
         alert('Por favor, inserta un nombre');
         return;
     }
+
+
+if (amigos.includes(nombreDeAmigo)) {
+      alert('Este nombre ya ha sido ingresado.');
+      return;
+    }
+
     amigos.push(nombreDeAmigo);
     limpiarCampo();
     mostrarLista();
