@@ -54,6 +54,12 @@ function sortearAmigo() {
         return;
     }
 
+// Validamos si hay menos de dos amigos en la lista
+if (amigos === 1) {
+    alert("Debe haber al menos dos amigos para realizar el sorteo");
+         return;
+}
+
     // Generamos un índice aleatorio
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
 
