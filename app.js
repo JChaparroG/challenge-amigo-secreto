@@ -17,7 +17,7 @@ function agregarAmigo() {
 
 // Validación para que solo se acepten nombres válidos (al menos una palabra con mínimo dos letras)
 if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,}(?:\s[a-zA-ZáéíóúÁÉÍÓÚñÑ]{2,})*$/.test(nombreDeAmigo)) {
-    alert('Por favor, ingresa un nombre válido (cada palabra debe tener al menos dos letras).');
+    alert('Por favor, ingresa un nombre válido.');
     return;
 }
 
